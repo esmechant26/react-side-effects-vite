@@ -4,9 +4,10 @@ const JokeDisplay = ({ joke, loading }) => {
   return (
     <div className="joke-container">
       {/* Step 2: If `loading` is true, display "Loading..." */}
+      <h1>{loading ? "Loading..." : joke}</h1>
       {/* Step 3: Otherwise, display the joke */}
     </div>
-  )
-}
+  );
+};
 
-export default JokeDisplay
+export default JokeDisplay;
